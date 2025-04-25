@@ -43,16 +43,13 @@ enriched the training data, providing the model with a wider variety of samples 
 ```
 pip install -r requirements.txt
 ``` 
-if in .ipynb file run the:
-``` 
-pip install -r ../requirements.txt
-```
+
 - Perform image preprocessing. Run all the file image_preprocess.ipynb in preprocess folder.
 - Perform image Augmentation. Run all the file image_Augmentation.ipynb in folder preprocess folder.
 - If you want to restart preprocessing or delete the preprocessed dataset for some reason, run the file delete_process_image.ipynb in preprocess folder.
 
 **Faster R-CNN**
-- Colored_160_Detector_FasterRCNN.ipyn in preprocess folder is used to apply FasterRCNN model on resized 160*160 images to detect and classify penguins and   turtles.
+- Colored_160_Detector_FasterRCNN.ipynb in preprocess folder is used to apply FasterRCNN model on resized 160*160 images to detect and classify penguins and   turtles.
 
 **Yolov5**
 - Use the yolov5s model structure from yolov5's repo https://github.com/ultralytics/yolov5?tab=readme-ov-file 
@@ -61,8 +58,8 @@ pip install -r ../requirements.txt
 
 
 ## Frontend
-- The frontend is build using Faster RCNN and Yolo v5 with pretrained state in the frontendModel folder. User can use their own pretrained state. In order to change the weight, the following will need to be done.
-1. Change the state in frontendModel folder, make sure the name remain FasterRCNN.pth for faster R-CNN or Yolov5_best.pt for Yolo v5
-2. Change the function detect_and_label_image_Faster_rcnn/detect_and_label_image_Yolov5 in UseFasterRCNN.py or UseYolov5 according to the model you used.
+1. The frontend is build using Faster RCNN and Yolov5 with pretrained state in the frontendModel folder. User can use their own pretrained state. In order to change the weight, the following will need to be done.
+2. Change the state in frontendModel folder, make sure the name remain FasterRCNN.pth for faster R-CNN or Yolov5_best.pt for Yolo v5
+3. Change the function detect_and_label_image_Faster_rcnn/detect_and_label_image_Yolov5 in UseFasterRCNN.py or UseYolov5 according to the model you used.
 
 
